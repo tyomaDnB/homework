@@ -1,0 +1,42 @@
+.pager {
+    font-family: 'Exo 2', sans-serif;
+    margin: auto;
+}
+.pager__button {
+    display: inline-block;
+}
+.pager__ellipsis {
+    color: #a13ad1;
+    margin: 0 10px;
+}
+.pager__link {
+    text-decoration-line: none;
+    color: #a13ad1;
+    border: 1px solid;
+    border-color: #cfc3d8;
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+.pager__link--before, .pager__link--after {
+    border: none;
+    margin: 0 5px;
+}
+.pager__link--before::before {
+    content: "\00AB";
+    color: #a13ad1;
+    margin-right: 10px;
+}
+.pager__link--after::after {
+    content: "\00BB";
+    color: #a13ad1;
+    margin-left: 10px;
+}
+.pager__link:hover {
+    color: #ffffff;
+    border-color: #530c74;
+    background-color: #a13ad1;
+}
+.pager__link--before:hover::before, .pager__link--after:hover::after {
+    color: #ffffff;
+    background-color: #a13ad1;
+}

@@ -1,0 +1,28 @@
+.page {
+    margin: 0;
+}
+.menu{
+    background-color:rgb(190, 120, 255);
+}
+.menu__list {
+    width: 900px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0;
+}
+.menu__item {
+    display: inline-block;
+    font-family: "Economica";
+}
+.menu__link {
+    text-decoration-line: none;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 6px 15px;
+    display: inline-block;
+}
+.menu__link:hover {
+    background-color: whitesmoke;
+    color: silver;
+}
