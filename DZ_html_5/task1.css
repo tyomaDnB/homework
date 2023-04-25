@@ -1,0 +1,68 @@
+.page {
+    margin: 0;
+}
+.menu{
+    background-color: #1aa4ff;
+}
+.menu__list {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    justify-content:space-between;
+    width: 900px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0;
+}
+.menu__item {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+.menu__link {
+    display: flex;
+    align-items: center;
+    text-decoration-line: none;
+    color: white;
+    height: 30px;
+    padding: 0 5px;
+    margin: 0 10px;
+}
+.menu__link:hover {
+    background-color: #eeeeee;
+    color: #a0a0a0;
+}
+.menu__sublist {
+    position: absolute; left: 0;
+    background: #eeeeee;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    list-style-type: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0 2px 2px #a0a0a0;
+}
+.sublist__item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+.sublist__link {
+    display: flex;
+    align-items: center;
+    text-decoration-line: none;
+    color: #a0a0a0;
+    height: 30px;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+.sublist__link:hover {
+    background-color: #a0a0a0;
+    color: #eeeeee;
+}
+.menu__sublist {
+    display: none;
+}
+.menu__item--travels:hover .menu__sublist {
+    display: flex;
+}

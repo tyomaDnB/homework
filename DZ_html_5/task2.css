@@ -1,0 +1,102 @@
+.affiche {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ee8129;
+    border-radius: 5px;
+    box-shadow: -3px -3px 3px #cbe2ef, 3px 3px 3px #cbe2ef;
+    margin: 0;
+    padding: 0;
+    width: 290px;
+}
+.affiche__header {
+    font-family: 'Kanit', sans-serif;
+    color: #ffffff;
+    background-color: #ee8129;
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+}
+.affiche__promo {
+    padding: 0 15px 30px;
+}
+.promo__header {
+    font-family: 'Fira Sans', sans-serif;
+    color: #3f4042;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px;
+}
+.promo__price {
+    font-family: 'Fira Sans', sans-serif;
+    color: #35495a;
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+}
+.promo__price::before {
+    content: "$";
+    font-size: 18px;
+    font-weight: 600;
+    vertical-align: top;
+}
+.promo__price::after {
+    content: "Monthly";
+    font-size: 14px;
+    font-weight: 600;
+    vertical-align: bottom;
+}
+.promo__list {
+    padding: 0;
+}
+.promo__item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Fira Sans', sans-serif;
+    color: #888c94;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #edf5fd;
+    text-align: left;
+    margin-bottom: 1px;
+    padding: 10px;
+}
+.promo__item::before {
+    display: block;
+    background-image: url("./marker_PSI.png");
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-size: 15px;
+    margin: 0 15px 0 30px;
+    /* content: url(marker_PSI.png);
+    width: 15px;
+    height: 15px; */
+}
+.promo__list .promo__item:nth-child(even) {
+ background-color: #f5f5f6;
+}
+.promo__link {
+    display: block;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    font-family: 'Kanit', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration-line: none;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #ee8129;
+    border-bottom: 2px solid #b3560b;
+    padding: 15px;
+    text-align: center;
+}
+.promo__link:hover {
+    border-color: #FF923A;
+    background-color: #FF923A;
+}
+.promo__link:active {
+    border-color: #bc6d2c;
+    background-color: #bc6d2c;
+}
