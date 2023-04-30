@@ -69,18 +69,12 @@
     height: 15px;
     background-size: 15px;
     margin: 0 15px 0 30px;
-    /* content: url(marker_PSI.png);
-    width: 15px;
-    height: 15px; */
 }
 .promo__list .promo__item:nth-child(even) {
  background-color: #f5f5f6;
 }
 .promo__link {
     display: block;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     font-family: 'Kanit', sans-serif;
     font-size: 12px;
     font-weight: 600;
