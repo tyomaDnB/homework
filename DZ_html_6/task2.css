@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "trebuchetms";
+    src: local(trebuchetms);
+}
+.page {
+    background-image: url("Background.png");
+    background-repeat: repeat;
+    background-origin: border-box;
+    font-size: 100% 100%;
+    padding: 0;
+    margin: 0;
+}
+.reviews__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "trebuchetms";
+    font-size: 40px;
+    font-weight: 500;
+    color: #3170a8;
+    text-transform: uppercase;
+    line-height: 0.45; 
+    height: 140px;
+    margin: 0; 
+}
+.reviews__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.header__marking {
+    color: #ee8129;
+}
+.reviews__comment {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+.comment__client-photo {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+.text__client-name, .text__client-post {
+    font-family: "trebuchetms";
+    font-size: 13px;
+    font-weight: 500;
+    color: #3070a8;
+    font-style: italic;
+    line-height: 1.846;
+}
+.text__client-name {
+    text-align: left;
+}
+.text__client-name::before {
+    content: "-";
+}
+.text__client-post {
+    text-align: right;
+}
+.text__client-says {
+    border-top: 1px dotted #666666;
+    font-size: 13px;
+    font-family: "trebuchetms";
+    color: #666666;
+    line-height: 1.538;
+    text-align: left;
+    padding-top:10px;
+}
+.comment__text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    background-color: #f7f7f7;
+    overflow-wrap: normal;
+    width: 360px;
+    margin-left: 25px;
+    padding: 10px;
+}
+.comment__text::before {
+    position: absolute;
+    left: -35px;
+    top: 30px;
+    content: "";
+    border: 15px solid transparent; border-right: 20px solid #f7f7f7;
+}
+.text__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
