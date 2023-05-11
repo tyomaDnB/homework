@@ -1,6 +1,6 @@
 .page {
     margin: 20 30 auto;
-    min-width: 260px;
+    min-width: 280px;
 }
 .search-string {
     display: flex;
@@ -47,10 +47,8 @@
     box-shadow: inset 1px 1px  3px #9e9d9d, inset -1px -1px 3px #a5a5a5;
 }
 .form__checkbox {
-    justify-content: flex-start;
     margin: 0;
 }
 .form__checkbox--name {
-    justify-content: flex-end;
     margin: 0 0 0 5px;
 }
