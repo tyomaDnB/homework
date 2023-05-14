@@ -25,7 +25,7 @@
 .form__shell-selection {
     display: flex;
 }
-.form__input {
+.form__button {
     width: 70 px;
     height: 25px;
     margin-left: 5px;
@@ -34,10 +34,10 @@
     border-radius: 2px;
     box-shadow: 1px 1px 1px #9e9d9d, -1px 0 1px #9e9d9d;
 }
-.form__input:hover {
+.form__button:hover {
     background: linear-gradient(#e7e5e5,#a5a5a5);
 }
-.form__input:active {
+.form__button:active {
     background: #757575;
 }
 .form__placeholder {
@@ -45,10 +45,8 @@
     height: 26px;
     border: none;
     box-shadow: inset 1px 1px  3px #9e9d9d, inset -1px -1px 3px #a5a5a5;
+    padding-left: 5px;
 }
 .form__checkbox {
-    margin: 0;
-}
-.form__checkbox--name {
-    margin: 0 0 0 5px;
+    margin-left: 0;
 }

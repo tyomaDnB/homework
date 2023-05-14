@@ -3,6 +3,7 @@
 }
 .search-string {
     display: flex;
+    min-width: 170px;
 }
 .search-string__form::after {
     position: absolute;
@@ -12,7 +13,7 @@
     border: 13px solid transparent;
     border-top: 28px solid #ffffff;
     border-right: 0;
-    border-bottom: 29px solid #ffffff;
+    border-bottom: 28px solid #ffffff;
 }
 .search-string__form {
     position: relative;
@@ -29,7 +30,7 @@
     display: flex;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.form__input {
+.form__button {
     width: 70 px;
     height: 25px;
     margin-left: 5px;
@@ -38,10 +39,10 @@
     border-radius: 2px;
     box-shadow: 1px 1px 1px #9e9d9d, -1px 0 1px #9e9d9d;
 }
-.form__input:hover {
+.form__button:hover {
     background: linear-gradient(#e7e5e5,#a5a5a5);
 }
-.form__input:active {
+.form__button:active {
     background: #757575;
 }
 .form__placeholder {
@@ -49,19 +50,19 @@
     height: 26px;
     border: none;
     box-shadow: inset 1px 1px  3px #9e9d9d, inset -1px -1px 3px #a5a5a5;
+    padding-left: 5px;
 }
 .form__example {
-    margin: 0;
+    margin: 0 0 4px 0;
 }
-.form__link-example {
-    margin: 0 0 4px 5px;
+.form__link {
     color: #000000;
     text-decoration-line: none;
     border-bottom: 1px dotted;
 }
-.form__link-example:hover {
-    color: #6e6e6e;
+.form__link:hover {
+    color: #ff0000;
 }
-.form__link-example:active {
-    color: #555555;
+.form__link:active {
+    color: #870101;
 }
