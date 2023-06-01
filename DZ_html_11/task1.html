@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>task1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="task1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body class="page">
+        <header class="header">
+            <h1 class="header__title">Showcase your work like a pro.</h1>
+            <h2 class="header__subtitle">Contact me if you like my work</h2>
+        </header>
+        <main class="main">
+            <article class="gallery">
+                <div class="picture">
+                    <img class="picture__image" src="image1.png" alt="photo">
+                    <div class="picture__inner-popup">
+                        <button class="picture__button">
+                            <img class="picture__icon" src="Icon zoom.png" alt="icon zoom">
+                        </button>
+                        <button class="picture__button">
+                            <img class="picture__icon" src="Icon link.png" alt="icon link">
+                        </button>
+                    </div>
+                </div>
+                <div class="popup">
+                    <img class="popup__image" src="image1.png" alt="photo-popup" width="100%">
+                    <button class="popup__button">
+                        <img class="popup__icon" src="Icon close.png" alt="icon close">
+                    </button>
+                </div>
+                <div class="picture">
+                    <img class="picture__image" src="image2.png" alt="photo">
+                    <div class="picture__inner-popup">
+                        <button class="picture__button">
+                            <img class="picture__icon" src="Icon zoom.png" alt="icon zoom">
+                        </button>
+                        <button class="picture__button">
+                            <img class="picture__icon" src="Icon link.png" alt="icon link">
+                        </button>
+                    </div>
+                </div>
+                <div class="picture">
+                    <img class="picture__image" src="image3.png" alt="photo">
+                    <div class="picture__inner-popup">
+                        <button class="picture__button">
+                            <img class="picture__icon" src="Icon zoom.png" alt="icon zoom">
+                        </button>
+                        <button class="picture__button">
+                            <img class="picture__icon" src="Icon link.png" alt="icon link">
+                        </button>
+                    </div>
+                </div>
+                <div class="picture">
+                    <img class="picture__image" src="image4.png" alt="photo">
+                    <div class="picture__inner-popup">
+                        <button class="picture__button">
+                            <img class="picture__icon" src="Icon zoom.png" alt="icon zoom">
+                        </button>
+                        <button class="picture__button">
+                            <img class="picture__icon" src="Icon link.png" alt="icon link">
+                        </button>
+                    </div>
+                </div>
+                <div class="picture">
+                    <img class="picture__image" src="image5.png" alt="photo">
+                    <div class="picture__inner-popup">
+                        <button class="picture__button">
+                            <img class="picture__icon" src="Icon zoom.png" alt="icon zoom">
+                        </button>
+                        <button class="picture__button">
+                            <img class="picture__icon" src="Icon link.png" alt="icon link">
+                        </button>
+                    </div>
+                </div>
+                <div class="picture">
+                    <img class="picture__image" src="image6.png" alt="photo">
+                    <div class="picture__inner-popup">
+                        <button class="picture__button">
+                            <img class="picture__icon" src="Icon zoom.png" alt="icon zoom">
+                        </button>
+                        <button class="picture__button">
+                            <img class="picture__icon" src="Icon link.png" alt="icon link">
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <script>
+            const picture = document.querySelector('.picture__button');
+            const popup = document.querySelector('.popup');
+            const popupButton = document.querySelector('.popup__button');
+            picture.addEventListener('click', handleClick);
+            popupButton.addEventListener('click', handleClick);
+            function handleClick () {
+            popup.classList.toggle('popup--opened');
+            }
+        </script>
+    </body>
+</html>
